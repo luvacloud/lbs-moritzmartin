@@ -1,0 +1,59 @@
+# Projekt: LBS Moritz Martin – Baufinanzierung Landing Page
+
+## Worum geht es
+Landing Page für Moritz Martin, Baufinanzierungsberater bei der LBS Süd in Stuttgart Botnang.
+Ziel: Qualifizierte Kundenanfragen generieren über Google Ads und Meta Ads.
+
+## Tech Stack
+- Reines HTML/CSS/JS – keine Frameworks, kein Build-Tool
+- Formular-Backend: Formspree (https://formspree.io)
+- Hosting: GitHub Pages
+- Domain-Anbindung: Wix Custom Domain oder eigene Domain → CNAME auf GitHub Pages
+- Tracking: Google Tag Manager + Meta Pixel (Platzhalter im Code, noch nicht aktiv)
+
+## Design & Branding
+- LBS Corporate Design: Rot #E2001A, Dunkelgrau #1a1a1a, Weiß
+- Schriften: Source Sans 3 (Text), Source Serif 4 (Headlines) – Google Fonts
+- Stil: Seriös, professionell, Sparkassen/LBS-nah
+- KEIN Wix-Editor – alles in reinem HTML
+
+## Dateistruktur
+```
+lbs-moritzmartin/
+├── index.html        ← komplette Landing Page (eine Datei)
+├── .cursorrules      ← diese Datei
+├── README.md         ← Projektübersicht
+└── SETUP.md          ← Checkliste: IDs, GitHub Pages, Wix-Anbindung
+```
+
+## Formular
+- Alle Felder haben name-Attribute für Formspree
+- Spam-Schutz via Honeypot-Feld (_gotcha)
+- Nach Absenden: Formular verschwindet, Erfolgs-Nachricht erscheint
+- Conversion-Tracking-Hooks sind im JS vorbereitet (auskommentiert)
+
+## Wichtige IDs – noch einzutragen
+- Formspree Form-ID: `EURE-FORM-ID` in index.html
+- Google Tag Manager: `GTM-XXXXXXX` in index.html
+- Meta Pixel ID: `EURE-PIXEL-ID` in index.html
+- Google Ads Conversion: `AW-XXXXXXXX/XXXXXXXXX` in index.html
+
+## Kontakt / Inhalt
+- Name: Moritz Martin
+- Firma: LBS Landesbausparkasse Süd
+- Tel: +49 711 223545-17
+- Mobil: +49 172 9365933
+- Mail: Moritz.Martin@lbs-sued.de
+- Adresse: Jägerstr. 36, 70174 Stuttgart
+
+## Zielgruppe
+- Region Stuttgart und Umgebung (Böblingen, Ludwigsburg, Esslingen, Waiblingen, Filderstadt)
+- Alter 28–55 Jahre
+- Interesse: Immobilienkauf, Baufinanzierung, Umschuldung, Modernisierung
+
+## Wenn du Code änderst
+- Immer LBS-Rot (#E2001A) als Primärfarbe verwenden
+- Keine externen JS-Frameworks hinzufügen (Seite muss schnell laden für Ads)
+- Formular-Felder NICHT entfernen – alle sind für die Lead-Qualifikation wichtig
+- Deutsche Sprache durchgängig
+- Mobile-First: Seite muss auf Smartphone perfekt aussehen
